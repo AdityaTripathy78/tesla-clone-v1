@@ -2,9 +2,11 @@ import React from 'react'
 import styled from "styled-components"
 import Section from './Section'
 
+
 function Home() {
     return (
         <Container>
+            <Section1>
             <Section 
                 title="Model S"
                 description="Order Online for Touchless Delivery"
@@ -13,6 +15,8 @@ function Home() {
                 rightBtnText="Existing inventory"
             
             />
+            </Section1>
+            <Section1>
             <Section 
                 title="Model Y"
                 description="Order Online for Touchless Delivery"
@@ -20,13 +24,17 @@ function Home() {
                 leftBtnText="Custom order"
                 rightBtnText="Existing inventory"
             />
-            <Section 
+            </Section1>
+            <Section1>
+            <Section  
                 title="Model 3"
                 description="Order Online for Touchless Delivery"
                 backgroundImg="model-3.jpg"
                 leftBtnText="Custom order"
                 rightBtnText="Existing inventory"
             />
+            </Section1>
+            <Section1>
             <Section 
                 title="Model X"
                 description="Order Online for Touchless Delivery"
@@ -34,6 +42,8 @@ function Home() {
                 leftBtnText="Custom order"
                 rightBtnText="Existing inventory"
             />
+            </Section1>
+            <Section1>
             <Section 
                 title="Lowest Cost Solar Panels in America"
                 description="Money-back guarantee"
@@ -41,6 +51,8 @@ function Home() {
                 leftBtnText="Order now"
                 rightBtnText="Learn more"
             />
+            </Section1>
+            <Section1>
             <Section 
                 title="Solar for New Roofs"
                 description="Solar Roof Costs Less Than a new Roof Plus Solar Pannel"
@@ -48,12 +60,15 @@ function Home() {
                 leftBtnText="Order now"
                 rightBtnText="Learn more"
             />
+            </Section1>
+            <Section1>
             <Section 
                 title="Accessories"
                 description=""
                 backgroundImg="accessories.jpg"
                 leftBtnText="Shop now"
             />
+            </Section1>
         </Container>
     )
 }
@@ -61,7 +76,14 @@ function Home() {
 export default Home
 
 const Container = styled.div`
+    position:relative;
     height:100vh;
+    width:100%;
+    // overflow: scroll;
+    scroll-snap-type: y mandatory;
 
 
+`
+const Section1 = styled.div`
+    scroll-snap-align:start;
 `

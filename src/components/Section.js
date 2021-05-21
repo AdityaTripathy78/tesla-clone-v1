@@ -95,6 +95,8 @@ const DownArrow = styled.img`
     height:40px;
     animation: animateDown infinite 1.5s;
     margin-bottom:10px;
+    overflow-x:hidden;
+    
 
 `
 const Buttons = styled.div`
